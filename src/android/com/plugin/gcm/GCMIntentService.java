@@ -19,7 +19,7 @@ public class GCMIntentService extends GCMBaseIntentService {
 
     private static String TAG = "PushPlugin-GCMIntentService";
 
-    public static final String MESSAGE = "message";
+    public static final String MESSAGE = "alert";
 
     public GCMIntentService() {
         super("GCMIntentService");
