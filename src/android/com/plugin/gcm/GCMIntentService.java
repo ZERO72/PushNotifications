@@ -85,7 +85,7 @@ public class GCMIntentService extends GCMBaseIntentService {
                         .setContentIntent(contentIntent)
                         .setAutoCancel(true);
 
-        String message = extras.getString("message");
+        String message = extras.getString("alert");
         if (message != null) {
             mBuilder.setContentText(message);
         } else {
