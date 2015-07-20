@@ -40,15 +40,16 @@
   // Call this to receive notification messages while the app is in the background
   PushNotification.prototype.onMessageInBackground = function(successCallback, errorCallback) {
     
-    alert('arrived');
     errorCallback = errorCallback || function() {};
 
     if (typeof errorCallback != "function")  {
+          alert('arrived1');
       console.log("PushNotification.onMessageInBackground failure: failure parameter not a function");
       return
     }
 
     if (typeof successCallback != "function") {
+      alert('arrived2');
       console.log("PushNotification.onMessageInBackground failure: success callback parameter must be a function");
       return
     }
