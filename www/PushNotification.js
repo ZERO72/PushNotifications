@@ -41,6 +41,8 @@
   PushNotification.prototype.onMessageInBackground = function(successCallback, errorCallback) {
     
     errorCallback = errorCallback || function() {};
+    
+    alert('arrived');
 
     if (typeof errorCallback != "function")  {
       console.log("PushNotification.onMessageInBackground failure: failure parameter not a function");
