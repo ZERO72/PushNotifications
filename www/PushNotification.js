@@ -43,7 +43,8 @@
     errorCallback = errorCallback || function() {};
     
     alert('arrived');
-
+    alert(successCallback);
+    alert(errorCallback);
     if (typeof errorCallback != "function")  {
       console.log("PushNotification.onMessageInBackground failure: failure parameter not a function");
       return
